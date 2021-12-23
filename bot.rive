@@ -1,0 +1,62 @@
++ start
+- Hello there! \n What do you want to see today? \n<br> 
+^ <button onclick="chatbot.getReply('movies')">Now showing across India</button><br>\n
+^ <button onclick="chatbot.getReply('browse')">Movies upcoming</button><br>\n
+^ <button onclick="chatbot.getReply('customer care')">customer care</button>
+
++ movies
+-Select your city for more accurate results \n<br> 
+^ <button onclick="chatbot.getReply('chn')">Chennai</button><br>\n
+^ <button onclick="chatbot.getReply('mum')">Mumbai</button><br>\n 
+^ <button onclick="chatbot.getReply('dlh')">Delhi</button><br>\n 
+^ <button onclick="chatbot.getReply('hyd')">Hydrebad</button><br>\n
+
++ browse
+-<a href="https://www.imdb.com/calendar/?region=in">Click here</a> to see the movies in IMBd website
+
++ customer care
+- Please mention your name 
++ #
+- Your name is a number?
++ *
+- Nice to meet you <star>\n please state your query
++ refund
+- Well you can state the problem to us over here or the call\n What do you prefer to do?<br>
+^<button onclick="chatbot.getReply('call')">Call</button><br>\n
+^<button onclick="chatbot.getReply('Chat')">Chat</button><br>\n
++ call
+- <a href="1800 xxxx xxxx">1800 xxxx xxxx</a>
++ chat
+- Please leave a detailed query{topic=refund}
+> topic refund
++ [*] error [*]
+-Thanks for your input , we'll get back to you soon!
+< topic
+
++ chn
+-Here are some sites that provide the tickets in Chennai! <br>\n
+^ <a href="https://in.bookmyshow.com/explore/home/chennai">bookmyshow </a></br>
+^ <a href="https://paytm.com/movies/chennai">paytm </a></br>
+^ <a href="https://www.pvrcinemas.com/nowshowing/Chennai">pvrcinemas</a></br>
+
++ mum
+-Here are some sites that provide the tickets in Mumbai! <br>\n
+^ <a href="https://in.bookmyshow.com/explore/movies-mumbai">bookmyshow</a></br>
+^ <a href="https://paytm.com/movies/mumbai">paytm</a></br>
+^ <a href="https://www.pvrcinemas.com/nowshowing/Mumbai">pvrcinemas</a></br>
+
++ dlh
+-Here are some sites that provide the tickets in Delhi! <br>\n
+^ <a href="https://in.bookmyshow.com/explore/movies-national-capital-region-ncr">bookmyshow</a></br>
+^ <a href="https://paytm.com/movies/delhi-ncr">paytm</a></br>
+^ <a href="https://www.pvrcinemas.com/nowshowing/Delhi-NCR">pvrcinemas</a></br>
+
++ hyd 
+-Here are some sites that provide the tickets in Hydrebad! <br>\n
+^ <a href="https://in.bookmyshow.com/explore/movies-hyderabad">bookmyshow</a></br>
+^ <a href="https://paytm.com/movies/hyderabad">paytm</a></br>
+^ <a href="https://www.pvrcinemas.com/nowshowing/Hyderabad">pvrcinemas</a></br>
+
+
++ *
+- It seems that we have to get you a human in touch \n Can you wait until I can get someone from our side?
